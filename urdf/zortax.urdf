@@ -1,0 +1,8 @@
+<robot name="myrobot">
+	<visual>
+	<origin rpy="0 0 0" xyz="0 0 0"/>	
+	<geometry>
+		<mesh filename="package://meshes/zortax_robot_arm.stp"/>
+	</geometry>
+	</visual>
+</robot>
