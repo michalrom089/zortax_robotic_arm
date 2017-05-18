@@ -6,8 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Pose1
-        - /Pose2
+        - /RobotModel1
+        - /RobotModel1/Links1
       Splitter Ratio: 0.5
     Tree Height: 422
   - Class: rviz/Selection
@@ -50,7 +50,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.5
+    - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
@@ -65,27 +65,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        part1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         part2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        part3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        part4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        part5:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -110,36 +90,6 @@ Visualization Manager:
         {}
       Update Interval: 0
       Value: false
-    - Alpha: 1
-      Axes Length: 1
-      Axes Radius: 0.100000001
-      Class: rviz/Pose
-      Color: 0; 170; 0
-      Enabled: true
-      Head Length: 0.150000006
-      Head Radius: 0.150000006
-      Name: Pose
-      Shaft Length: 0.5
-      Shaft Radius: 0.100000001
-      Shape: Arrow
-      Topic: /kdl_pose
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Axes Length: 1
-      Axes Radius: 0.100000001
-      Class: rviz/Pose
-      Color: 255; 25; 0
-      Enabled: true
-      Head Length: 0.300000012
-      Head Radius: 0.100000001
-      Name: Pose
-      Shaft Length: 1
-      Shaft Radius: 0.0500000007
-      Shape: Arrow
-      Topic: /nonkdl_pose
-      Unreliable: false
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -164,7 +114,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.32693291
+      Distance: 968.650696
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -199,5 +149,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1216
-  X: 65
-  Y: 0
+  X: 410
+  Y: 172
