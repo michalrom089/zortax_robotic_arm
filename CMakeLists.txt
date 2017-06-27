@@ -9,9 +9,12 @@ project(zortax_robotic_arm)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  rviz
+  sensor_msgs
   std_msgs
-  urdf
+  geometry_msgs
+  tf
+  kdl_conversions
+  kdl_parser
 )
 
 ## System dependencies are found with CMake's conventions
@@ -198,3 +201,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(dkin src/dkin.cpp)
+target_link_libraries(dkin ${catkin_LIBRARIES})
+add_dependencies(dkin zortax_generate_messages_cpp)

@@ -1,11 +1,18 @@
 <launch>
  <arg name="rvizconfig" default="$(find zortax_robotic_arm)/rviz/urdf.rviz" />	
-  <param name="robot_description" command="$(find xacro)/xacro.py $(find zortax_robotic_arm)/urdf/zortax.urdf" />
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find zortax_robotic_arm)/urdf/simple.urdf" />
   <param name="use_gui" value="true"/>
+  
+  <param name="d1" value="0.2005" />
+  <param name="a2" value="0.1575" />
+  <param name="a3" value="0.18334" />
+  <param name="a4" value="0.14616" />
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
-	
+
+  <node name="DKIN" pkg="zortax_robotic_arm" type="dkin"/>	
+  
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 
 
