@@ -9,3 +9,8 @@ T_3_4=[const -const 0 a3;const const 0 0 ;0 0 1 0;0 0 0 1];
 T_4_5=[1 0 0 a4;0 1 0 0;0 0 1 0;0 0 0 1];
 
 T=T_0_1*T_1_2*T_2_3*T_3_4*T_4_5;
+
+
+x=simplify(T(1,4))
+y=simplify(T(2,4))
+z=simplify(T(3,4))
