@@ -35,7 +35,7 @@
 
 #define ELBOW_STEPS         150
 #define SHOULDER_STEPS      350
-#define ARM_STEPS           200
+#define ARM_STEPS           350
 7
 #define SERVO_MAX           180
 
